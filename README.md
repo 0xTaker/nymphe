@@ -27,9 +27,11 @@ CHAIN_ID=0x1
 ```
 Additional environment variables can be added and accessed within the code using `process.env.<ENV_NAME>` such as `process.env.CHAIN_ID`.
 
-In order to run the repository:
+In order to build and start the application:
 ```
-npm run dev
+npm run build
+npm start
+
 ```
 
 A simple sanity check that it is on:
