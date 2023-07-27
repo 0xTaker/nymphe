@@ -2,7 +2,7 @@
 
 Nymphe is a boilerplate that standardises the development of web-based JSON-RPC applications like that of:
 - [Orderflow Auctions](https://frontier.tech/the-orderflow-auction-design-space)
-- [ERC-4337 bundlers](https://eips.ethereum.org/EIPS/eip-4337)
+- [ERC-4337 Bundlers](https://eips.ethereum.org/EIPS/eip-4337)
 - [Block Builders](https://www.titanbuilder.xyz/docs)
 
 ...and other RPC-based applications.
@@ -20,7 +20,7 @@ To install the necessary dependencies:
 yarn
 ```
 
-This template may require a set of environment variables to configure, which can be made accessable via the `.env` file. Currently, this template consists of simply:
+This template may require a set of environment variables to configure, which can be made accessable via the `.env` file. An examplar can be copied from the provided `.env.example`. Currently, this template consists of simply:
 ```
 PORT=3000
 CHAIN_ID=0x1
