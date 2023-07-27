@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build": "tsc",
+    "start": "node out/index.js",
     "dev": "ts-node src/index.ts"
   },
   "dependencies": {
