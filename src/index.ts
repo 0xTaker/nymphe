@@ -6,12 +6,12 @@ import { Rpc } from "./rpc";
 const { app } = expressWs(express());
 const rpc = new Rpc();
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.get('/', (req, res) => { res.send('Hello World!') });
-app.post("/", (req, res) => {
-    return res.status(200).send(rpc.process(req.body));
+app.post("/", async (req, res) => {
+    return res.status(200).send(await rpc.process(req.body));
 });
 
 app.ws("/", (ws, req) => {

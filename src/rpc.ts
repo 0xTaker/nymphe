@@ -5,7 +5,6 @@ import { toRpcError, toRpcResponse } from "./utils";
 export class Rpc {
     async process(result: JsonRpcPayload): Promise<JsonRpcResult | JsonRpcError> {
         let _parseResult = RPCInputSchema.safeParse(result);
-        console.log(_parseResult);
         if (!_parseResult.success) return toRpcError(1, { code: 200, message: "Your JSON-RPC payload data does not fit the required RPC format" });
 
         let { id, method, params } = _parseResult.data;
