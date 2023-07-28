@@ -10,6 +10,7 @@ Nymphe is a boilerplate that standardises the development of web-based JSON-RPC 
 A standard interface across Websockets and HTTP and across multiple clients that build on top of this  boilerplate makes it easier for users, dApps, SDKs and searchers to connect and switch between these applications, lowering switching cost.
 
 ## Example Use Cases
+- [Bundle Multiplexer](https://github.com/0xTaker/bundle-multiplexer)
 
 ## Build and Run
 
